@@ -13,7 +13,7 @@ Perfect for students, educators, and database professionals who need quick insig
 
 ## 🚀 Live Demo
 
-[🔗 Click here to try it online](#)  
+[🔗 Click here to try it online](https://database-normalizer.netlify.app/)  
 
 ---
 
@@ -36,4 +36,4 @@ Perfect for students, educators, and database professionals who need quick insig
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/database-normalization-calculator.git
+git clone https://github.com/jenilsoni01/db-schema-normalizer
