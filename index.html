@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Normalization Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Database Normalization Calculator</h1>
+
+      <div class="input-section">
+        <h2>Input Functional Dependencies</h2>
+        <div class="fd-inputs">
+          <input
+            type="text"
+            id="attributes"
+            placeholder="Enter all attributes (comma separated)"
+            class="full-width"
+          />
+          <div class="fd-row">
+            <input type="text" id="lhs" placeholder="Left hand side" />
+            <span>→</span>
+            <input type="text" id="rhs" placeholder="Right hand side" />
+            <button onclick="addFD()">Add FD</button>
+          </div>
+        </div>
+        <div id="fd-list" class="fd-list"></div>
+        <button onclick="calculate()" class="calculate-btn">
+          Calculate All
+        </button>
+      </div>
+
+      <div class="results-section">
+        <!-- <div class="result-box"> -->
+        <!-- <h3>Closure</h3> -->
+        <!-- <div id="closure-result"></div> -->
+        <!-- </div> -->
+
+        <div class="result-box">
+          <h3>Candidate Keys</h3>
+          <div id="candidate-keys-result"></div>
+        </div>
+
+        <div class="result-box">
+          <h3>Normal Forms</h3>
+          <div id="normal-forms-result"></div>
+        </div>
+
+        <div class="result-box">
+          <h3>All Subset Closures</h3>
+          <div id="subset-closures-result"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
